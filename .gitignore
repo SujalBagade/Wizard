@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Docker
+*.pid
+*.log
+*.sock
+
+# IDE
+.vscode/
+.idea/
+.DS_Store
+
+# Other
+*.bak
