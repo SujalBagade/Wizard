@@ -1,11 +1,9 @@
-# backend/app/crud.py
 from sqlmodel import Session, select
 from .models import Problem, Submission
 from typing import List
 import json
 
 def create_problem(session: Session, data: dict) -> Problem:
-    # ensure options stored as JSON string
     data2 = data.copy()
     if isinstance(data2.get("options"), list):
         data2["options"] = json.dumps(data2["options"])
